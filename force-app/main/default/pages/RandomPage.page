@@ -1,0 +1,24 @@
+<apex:page standardController="Random__c">
+    <apex:form >
+
+        <apex:pageBlock title="Random Values" >
+
+            <apex:pageBlockButtons location="bottom">
+
+                <apex:commandButton action="{!save}" value="Save"/>
+
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection>
+              
+                    
+               <apex:inputField value="{!Random__c.name}"/> 
+                <apex:inputField value="{!Random__c.Number1__c}"/>
+                <apex:inputField value="{!Random__c.Number2__c}"/>
+                <apex:inputField value="{!Random__c.Text1__c}"/>
+                <apex:inputField value="{!Random__c.Text2__c} "/>              
+
+            </apex:pageBlockSection>          
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

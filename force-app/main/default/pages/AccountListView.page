@@ -1,0 +1,15 @@
+<apex:page Controller="AccountsClass"  lightningStyleSheets="true">
+    
+    <apex:form>
+        <apex:pageBlock>
+            <apex:pageBlockTable value="{!records}" var="acc">
+                <apex:column headerValue="Accountname">
+                    <apex:outputText value="{!acc.name}"/>
+                </apex:column>
+                <apex:column headerValue="Account Owner Name">
+                    <apex:outputText value="{!acc.owner.name}"/>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>   
+</apex:page>
